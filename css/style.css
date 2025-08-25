@@ -176,7 +176,6 @@ body {
 .stand-out-list {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .stand-out-item {
@@ -190,13 +189,14 @@ body {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-
 .stand-out-desc {
   letter-spacing: 0.02em;
 }
 
+
 .our-team {
   background-color: #f4f4fd;
+  padding: 120px 0 72px;
 }
 
 .our-team-title {
@@ -210,14 +210,27 @@ body {
 }
 
 .our-team-list {
-  margin: auto;
+  display: flex;
   text-align: center;
-  justify-content: space-around;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .our-team-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
   background-color: #ffffff;
-  margin-bottom: 120px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+              0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+              0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  height: 380px;
+  transition: all .1s ease-out;
+}
+.member-desc {
+  padding: 32px 16px;
 }
 
 .member-name {
@@ -226,7 +239,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
 }
 
 .member-position {
@@ -235,23 +247,38 @@ body {
 }
 
 .member-icon-list {
-  justify-content: space-around;
-  margin: 8px auto 0;
-  background-color: transparent;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
   opacity: 0;
+  transition: all .2s ease-out;
+}
+.member-icon-list.visible {
+  display: flex;
+}
+.our-team-item {
+  cursor: pointer;
 }
 
 .our-team-item:hover,
 .our-team-item:focus {
-  cursor: pointer;
-  margin-bottom: 75px;
-  transition: all 1s ease-in-out;
+  height: 428px;
+  margin-bottom: 0;
+}
+.our-team-item:hover .member-icon-list,
+.our-team-item:focus .member-icon-list {
+  opacity: 1;
 }
 
-.our-team-item:hover .member-icon-list {
+.member-icon{
+  cursor: pointer;
+}
+
+/* .our-team-item:hover .member-icon-list {
   opacity: 1;
   transition: all 0.2s ease-in-out;
-}
+} */
 
 /* .our-team-item:hover .member-icon,
 .our-team-item:focus .member-icon {
