@@ -170,16 +170,25 @@ body {
   height: 56px;
 }
 
-
 .banner-btn:hover,
 .banner-btn:focus {
   background-color: #404bbf;
 }
 
-
+.stand-out-container {
+  padding: 120px 0;
+}
+.stand-out-name {
+  display: none;
+}
 .stand-out-list {
-  margin: auto;
-  justify-content: space-around;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.stand-out-item {
+  width: calc((100% - 72px) / 4);
 }
 .stand-out-title {
   font-weight: 500;
