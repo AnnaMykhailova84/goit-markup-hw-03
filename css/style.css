@@ -42,12 +42,10 @@ body {
 
 .ocean-color {
   color: #404bbf;
-  /*pretend GREEN*/
 }
 
 .navy-blue-color {
   color: #2e2f42;
-  /*pretend RED*/
 }
 
 .slate {
@@ -75,19 +73,15 @@ body {
 .container {
   max-width: 1128px;
   margin: 0 auto ;
-  /* padding-left: ; */
-  /* padding-right: ; */
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
-  /* height: 72px; */
 }
 
 .header-nav {
   display: flex;
-  /* justify-content: left; */
   padding: 24px 0;
 }
 
@@ -139,7 +133,6 @@ body {
 .banner {
   background-color: #2e2f42;
   text-align: center;
-  /* height: 600px; */
 }
 .banner-container {
   padding: 188px 0;
@@ -165,7 +158,6 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
-  /* padding: 16px 32px; */
   width: 169px;
   height: 56px;
 }
@@ -249,8 +241,6 @@ body {
   opacity: 0;
 }
 
-/* .member-icon {
-} */
 .our-team-item:hover,
 .our-team-item:focus {
   cursor: pointer;
