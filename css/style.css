@@ -3,9 +3,23 @@
   text-decoration: none;
   list-style-type: none;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 ul {
-  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
 }
 
 a {
@@ -56,16 +70,43 @@ body {
   color: #4d5ae5;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-right: 76px;
+}
+.container {
+  max-width: 1128px;
+  margin: 0 auto ;
+  /* padding-left: ; */
+  /* padding-right: ; */
 }
 
-.header-nav .nav-item-link {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  /* height: 72px; */
+}
+
+.header-nav {
+  display: flex;
+  /* justify-content: left; */
+  padding: 24px 0;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item-link {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
 }
+.nav-item:not(:last-child),
+.address-item:not(:last-child) {
+  margin-right: 40px;
+}
 
-.header-nav .nav-item-link:hover,
-.header-nav .nav-item-link:focus {
+.nav-item-link:hover,
+.nav-item-link:focus {
   color: #404bbf;
 }
 
@@ -75,23 +116,33 @@ body {
 
 .header-address {
   font-style: normal;
+  display: flex;
+  justify-content: end;
+  padding: 24px 0;
+}
+.address-list {
+  display: flex;
 }
 
-.header-address .contact-link {
+.header-address .address-link {
   font-weight: 400;
   color: inherit;
   letter-spacing: 0.02em;
 }
 
-.header-address .contact-link:hover,
-.header-address .contact-link:focus,
-.header-address .contact-link:active {
+.header-address .address-link:hover,
+.header-address .address-link:focus,
+.header-address .address-link:active {
   color: #404bbf;
 }
 
 .banner {
   background-color: #2e2f42;
   text-align: center;
+  /* height: 600px; */
+}
+.banner-container {
+  padding: 188px 0;
 }
 
 .banner-title {
@@ -106,18 +157,26 @@ body {
   color: #ffffff;
   border-style: none;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 48px auto 0;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  /* padding: 16px 32px; */
+  width: 169px;
+  height: 56px;
 }
+
+
 .banner-btn:hover,
 .banner-btn:focus {
   background-color: #404bbf;
 }
+
+
 .stand-out-list {
   margin: auto;
   justify-content: space-around;
