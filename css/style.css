@@ -63,6 +63,9 @@ body {
 .cloud {
   color: #f4f4fd;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -175,8 +178,18 @@ body {
 .stand-out-container {
   padding: 120px 0;
 }
-.stand-out-name {
-  display: none;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .stand-out-list {
   display: flex;
