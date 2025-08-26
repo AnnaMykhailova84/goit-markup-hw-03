@@ -78,8 +78,9 @@ body {
   margin-right: 76px;
 }
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header-container {
@@ -89,11 +90,15 @@ body {
 
 .header-nav {
   display: flex;
-  padding: 24px 0;
+  align-items: center;
+  /* padding: 24px 0; */
 }
 
 .nav-list {
   display: flex;
+}
+.nav-item {
+  padding: 24px 0
 }
 
 .nav-item-link {
@@ -140,20 +145,20 @@ body {
 .banner {
   background-color: #2e2f42;
   text-align: center;
-}
-.banner-container {
   padding: 188px 0;
 }
 
 .banner-title {
+  max-width: 496px;
   color: #ffffff;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .banner-btn {
+  display: block;
   color: #ffffff;
   border-style: none;
   background-color: #4d5ae5;
@@ -165,7 +170,7 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   transition: all 0.1s ease-out;
 }
@@ -175,7 +180,7 @@ body {
   background-color: #404bbf;
 }
 
-.stand-out-container {
+.stand-out {
   padding: 120px 0;
 }
 
@@ -213,7 +218,8 @@ body {
 
 .our-team {
   background-color: #f4f4fd;
-  padding: 120px 0 72px;
+  padding: 120px 0;
+  /* padding: 120px 0 72px; */
 }
 
 .our-team-title {
@@ -236,7 +242,7 @@ body {
 .our-team-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px;           ДЛЯ АНІМАЦІЇ ПРИ ХОВЕРІ   */ 
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
@@ -246,7 +252,7 @@ body {
   transition: all 0.1s ease-out;
 }
 .member-desc {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .member-name {
@@ -255,18 +261,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .member-position {
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 
 .member-icon-list {
-  display: none;
+  display: flex ;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 8px;
+  padding: 0 16px;
 }
 .member-icon-list.visible {
   display: flex;
@@ -277,9 +284,10 @@ body {
 
 .our-team-item:hover,
 .our-team-item:focus {
-  height: 428px;
-  margin-bottom: 0;
+  /* height: 428px;
+  margin-bottom: 0;       ДЛЯ АНІМАЦІЇ ПРИ ХОВЕРІ    */
 }
+
 .our-team-item:hover .member-icon-list,
 .our-team-item:focus .member-icon-list {
   display: flex;
@@ -289,7 +297,7 @@ body {
   cursor: pointer;
 }
 
-.portfolio-container {
+.portfolio {
   padding: 120px 0;
 }
 .portfolio-title {
@@ -299,7 +307,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -307,12 +315,15 @@ body {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: space-between;
-  margin-top: 48px;
 }
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   cursor: pointer;
+}
+
+.portfolio-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 48px;
 }
 
 .portfolio-item-card {
@@ -340,11 +351,9 @@ body {
 }
 
 .portfolio-item-desc {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
-  height: 120px;
 }
 
 .portfolio-item-name {
@@ -353,6 +362,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-item-type {
@@ -361,15 +371,14 @@ body {
 
 .footer {
   background-color: #2e2f42;
-}
-
-.footer-container {
   padding: 100px 0;
 }
-
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-text {
   width: 264px;
-  margin-top: 16px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
