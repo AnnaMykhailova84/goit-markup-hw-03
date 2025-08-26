@@ -269,7 +269,7 @@ body {
 }
 
 .member-icon-list {
-  display: flex ;
+  display: none ;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 8px;
@@ -339,17 +339,74 @@ body {
   padding: 40px 32px;
 }
 
+.portfolio-item-card.card-1 {
+  background-image: url('../images/portfolio1.jpg');
+}
+.portfolio-item-card.card-1:hover {
+  background-image: none;
+}
+
+.portfolio-item-card.card-1:hover .portfolio-item-text.text-1 {
+  color: rgba(244, 244, 253, 1);
+}
+.portfolio-item-card.card-2 {
+  background-image: url('../images/portfolio2.jpg');
+}
+.portfolio-item-card.card-2:hover {
+  background-image: none;
+}
+
+.portfolio-item-card.card-2:hover .portfolio-item-text.text-2 {
+  color: rgba(244, 244, 253, 1);
+}
+.portfolio-item-card.card-3 {
+  background-image: url('../images/portfolio3.jpg');
+}
+.portfolio-item-card.card-3:hover {
+  background-image: none;
+}
+
+.portfolio-item-card.card-3:hover .portfolio-item-text.text-3 {
+  color: rgba(244, 244, 253, 1);
+}
+.portfolio-item-card.card-4 {
+  background-image: url('../images/portfolio4.jpg');
+}
+.portfolio-item-card.card-4:hover {
+  background-image: none;
+}
+
+.portfolio-item-card.card-4:hover .portfolio-item-text.text-4 {
+  color: rgba(244, 244, 253, 1);
+}
+.portfolio-item-card.card-5 {
+  background-image: url('../images/portfolio5.jpg');
+}
+.portfolio-item-card.card-5:hover {
+  background-image: none;
+}
+
+.portfolio-item-card.card-5:hover .portfolio-item-text.text-5 {
+  color: rgba(244, 244, 253, 1);
+}
+.portfolio-item-card.card-6 {
+  background-image: url('../images/portfolio6.jpg');
+}
+.portfolio-item-card.card-6:hover {
+  background-image: none;
+}
+
+.portfolio-item-card.card-6:hover .portfolio-item-text.text-6 {
+  color: rgba(244, 244, 253, 1);
+}
+
 .portfolio-item-text {
   color: rgba(244, 244, 253, 0);
   transition: all 0.1s ease-out;
 }
-.portfolio-item-card:hover {
+/* .portfolio-item-card:hover {
   background-image: none;
-}
-.portfolio-item-card:hover .portfolio-item-text {
-  color: rgba(244, 244, 253, 1);
-}
-
+} */
 .portfolio-item-desc {
   border: 1px solid #e7e9fc;
   border-top: none;
